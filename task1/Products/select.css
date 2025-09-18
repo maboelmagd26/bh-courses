@@ -1,0 +1,31 @@
+select,
+::picker(select) {
+  appearance: base-select;
+}
+select {
+  max-width: 10rem;
+  padding: 0.25rem;
+  box-shadow: 5px 5px 15px coral;
+}
+selectedcontent,
+option {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+option {
+  padding-block: 0.25rem;
+}
+.country-name {
+  color: #333;
+}
+.flag {
+  width: 30px;
+  height: 20px;
+}
+option::checkmark {
+  display: none;
+}
+option:checked {
+  background-color: hsl(200, saturation, lightness);
+}

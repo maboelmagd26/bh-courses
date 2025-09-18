@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="select.css" />
     <title>simple Store | Products | product2</title>
   </head>
   <body>
@@ -19,6 +20,73 @@
         </article>
         <button>Buy Now</button>
       </section>
+      <section>
+        <label
+          >name
+          <input
+            type="text"
+            value="mahmoud"
+            placeholder="ex: essam sasa"
+            name="name"
+            id="name"
+            required
+            readonly
+          />
+        </label>
+        <label for="userpass">
+          pass:
+          <input
+            type="password"
+            name="pass"
+            id="userpass"
+            minlength="8"
+            maxlength="16"
+          />
+        </label>
+        <label>male<input type="radio" name="gender" /> </label>
+        <label>female<input type="radio" name="gender" checked /></label>
+        <label>
+          <input type="checkbox" name="html" id="html" />
+          HTML
+        </label>
+        <label>
+          <input type="checkbox" name="css" id="css" />
+          CSS
+        </label>
+        <label>
+          <input type="checkbox" name="js" id="js" checked />
+          JS
+        </label>
+        <!-- another value than the default label : submit -->
+        <input type="submit" value="click" />
+      </section>
+      <select>
+        <button><selectedcontent></selectedcontent></button>
+        <option value="egy" selected>
+          <img
+            src="/flag-for-egypt-svgrepo-com.svg"
+            alt="egy icon"
+            class="flag"
+          />
+          <div class="country-name">egypt</div>
+        </option>
+        <option value="ein">
+          <img
+            src="/flag-for-egypt-svgrepo-com.svg"
+            alt="egy icon"
+            class="flag"
+          />
+          <div class="country-name">india</div>
+        </option>
+        <option value="us">
+          <img
+            src="/flag-for-egypt-svgrepo-com.svg"
+            alt="egy icon"
+            class="flag"
+          />
+          <div class="country-name">usa</div>
+        </option>
+      </select>
     </main>
     <br />
     <footer>&copy;2025 simple E-commerce Store</footer>
